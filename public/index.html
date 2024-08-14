@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sl4v_D3fend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+	   <p>4rchi</p>
+	   <p>@bh_cat</p>
+    </header>
+
+    <main>
+        <section>
+            <div class="tree-node node-model">
+                <button class="toggle-button1">Моделирование</button>
+                <div class="model-content">
+                    <div class="tree-node node-element">
+                        <p-head>Инвентаризация<br>активов</p-head>
+                        <div class="tree-node node-leaf" onclick="showDescription('Asset Vulnerability Enumeration')">Перечисление<br>уязвимостей<br>активов</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Container Image Analysis')">Анализ<br>образов<br>контейнеров</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Configuration Inventory')">Инвентаризация<br>конфигурации</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Data Inventory')">Инвентаризация<br>данных</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Hardware Component Inventory')">Инвентаризация<br>аппаратных<br>компонентов</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Network Node Inventory')">Инвентаризация<br>сетевых<br>узлов</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Software Inventory')">Инвентаризация<br>ПО</div>
+                    </div>
+                    <div class="tree-node node-element">
+                        <p-head>Маппинг<br>сети</p-head>
+                        <div class="tree-node node-leaf" onclick="showDescription('Logical Link Mapping')">Маппинг<br>логических<br>связей</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Active Logical Link Mapping')">Активный<br>маппинг<br>логических<br>связей</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Passive Logical Link Mapping')">Пассивный<br>маппинг<br>логических<br>связей</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Network Traffic Policy Mapping')">Составление<br>политики<br>сетевого<br>трафика</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Physical Link Mapping')">Маппинг<br>физических<br>каналов</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Active Physical Link Mapping')">Активный<br>маппинг<br>физических<br>каналов</div>
+                    </div>
+                    <div class="tree-node node-element">
+                        <p-head>Составление<br>схемы<br>деятельности </p-head>
+                        <div class="tree-node node-leaf" onclick="showDescription('Access Modeling')">Моделирование<br>доступа</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Operational Dependency Mapping')">Сопоставление<br>операционных<br>зависимостей</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Operational Risk Assessment')">Оценка<br>операционных<br>рисков</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Organization Mapping')">Моделирование<br>организации</div>
+                    </div>
+                    <div class="tree-node node-element">
+                        <p-head>Маппинг<br>систем</p-head>
+                        <div class="tree-node node-leaf" onclick="showDescription('Data Exchange Mapping')">Сопоставление<br>обмена<br>данными</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('Service Dependency Mapping')">Сопоставление<br>зависимостей<br>сервисов</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('System Dependency Mapping')">Сопоставление<br>системных<br>зависимостей</div>
+                        <div class="tree-node node-leaf" onclick="showDescription('System Vulnerability Assessment')">Оценка<br>уязвимости<br>систем</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tree-node node-model">
+              <button class="toggle-button1">"Закалка"</button>
+                <div class="model-content">
+                  <div class="tree-node node-element">
+                      <p-head>"Закалка"<br>приложений</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Application Configuration Hardening')">Закалка<br>конфигурации<br>приложений</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Dead Code Elimination')">Ликвидация<br>"мертвого кода"</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Exception Handler Pointer Validation')">Валидация<br>исключений<br>указателя</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Pointer Authentication')">Pointer<br>Authentication</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Segment Execution Prevention')">Предотвращение<br>выполнения<br>сегмента<br>процесса</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Segment Address Offset Randomization')">Рандомизация<br>смещения<br>адреса<br>сегмента</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Stack Frame Canary Validation')">Валидация<br>фрейма<br>канареек</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>"Закалка"<br>учётных<br>данных</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Biometric Authentication')">Биометрическая<br>аутентификация</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Certificate Pinning')">Прикрепление<br>сертификатов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Credential Rotation')">Ротация<br>учётных<br>данных</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Credential Transmission Scoping')">Передача<br>учётных<br>данных</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Domain Trust Policy')">Политика<br>доверия<br>к доменам</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Multi-factor Authentication')">Мультифакторная<br>аутентификация</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('One-time Password')">Одноразовый<br>пароль</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Strong Password Policy')">Строгая<br>политика<br>паролей</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('User Account Permissions')">Права<br>доступа<br>УЗ пользователя</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>"Закалка"<br>сообщений</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Message Authentication')">Аутентификация<br>сообщений</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Message Encryption')">Шифрование<br>сообщений</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Transfer Agent Authentication')">Аутентификация<br>передачи</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>"Закалка"<br>платформ</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Bootloader Authentication')">Аутентификация<br>загрузчика</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Disk Encryption')">Шифрование<br>диска</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Driver Load Integrity Checking')">Проверка<br>целостности<br>загрузки<br>драйвера</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Encryption')">Шифрование<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Local File Permissions')">Разрешения<br>локальных<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('RF Shielding')">Экранирование<br>радиочастот</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Software Update')">Обновление<br>ПО</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System Configuration Permissions')">Права<br>доступа<br>к конфигурации<br>системы</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('TPM Boot Integrity')">Целостность<br>загрузки<br>TPM</div>
+                  </div>
+                </div>
+            </div>
+            <div class="tree-node node-model">
+              <button class="toggle-button1">Обнаружение</button>
+                <div class="model-content">
+                  <div class="tree-node node-element">
+                      <p-head>Анализ<br>файлов</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Dynamic Analysis')">Динамический<br>анализ</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Emulated File Analysis')">Эмулированный<br>анализ<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Content Analysis')">Анализ<br>содержимого<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Content Rules')">Правила<br>анализа<br>содержимого<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Hashing')">Хеширование<br>файлов</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Анализ<br>идентификаторов</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Homoglyph Detection')">Обнаружение<br>омоглифов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Identifier Activity Analysis')">Анализ<br>активности<br>идентификаторов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Identifier Reputation Analysis')">Анализ<br>репутации<br>идентификаторов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Domain Name Reputation Analysis')">Анализ<br>репутации<br>доменных<br>имен</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Hash Reputation Analysis')">Анализ<br>репутации<br>хэша<br>файла</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('IP Reputation Analysis')">Анализ<br>репутации<br>IP-адресов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('URL Reputation Analysis')">Анализ<br>репутации<br>URL-адресов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('URL Analysis')">Анализ<br>URL-адресов</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Анализ<br>сообщений</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Sender MTA Reputation Analysis')">Анализ<br>репутации<br>MTA <br>отправителя</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Sender Reputation Analysis')">Анализ<br>репутации<br>отправителя</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Анализ<br>сетевой<br>активности</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Administrative Network Activity Analysis')">Анализ<br>активности<br>корпоративной<br>сети</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Byte Sequence Emulation')">Эмуляция<br>последовательности<br>байтов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Certificate Analysis')">Анализ<br>сертификатов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Active Certificate Analysis')">Активный<br>анализ<br>сертификатов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Passive Certificate Analysis')">Пассивный<br>анализ<br>сертификатов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Client-server Payload Profiling')">Профилирование<br>полезной<br>нагрузки<br>клиент-сервера</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Connection Attempt Analysis')">Анализ<br>попыток<br>подключения</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('DNS Traffic Analysis')">Анализ<br>трафика<br>DNS</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Carving')">Карвинг<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Inbound Session Volume Analysis')">Анализ<br>объема<br>входящих<br>сессий</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('IPC Traffic Analysis')">Анализ<br>трафика<br>IPC</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Network Traffic Community Deviation')">Отклонение<br>от нормы сетевого<br>трафика</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Per Host Download-Upload Ratio Analysis')">Анализ<br>соотношения<br>загрузки и выгрузки<br>для каждого<br>хоста</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Protocol Metadata Anomaly Detection')">Обнаружение<br>аномалий<br>в метаданных<br>протоколов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Relay Pattern Analysis')">Анализ<br>паттернов<br>ретрансляции</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Remote Terminal Session Detection')">Обнаружение<br>сеанса<br>удаленного<br>терминала</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('RPC Traffic Analysis')">Анализ<br>трафика<br>RPC</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Мониторинг<br>платформы</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Integrity Monitoring')">Мониторинг<br>целостности<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Firmware Behavior Analysis')">Анализ<br>поведения<br>ПО</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Firmware Embedded Monitoring Code')">Код<br>мониторинга<br>прошивки</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Firmware Verification')">Проверка<br>прошивки</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Peripheral Firmware Verification')">Проверка<br>прошивки<br>периферийного<br>устройства</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System Firmware Verification')">Проверка<br>прошивки<br>системы</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Operating System Monitoring')">Мониторинг<br>операционной<br>системы</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Endpoint Health Beacon')">Мониторинг<br>состояния<br>безопасности<br>конечной<br>точки</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Input Device Analysis')">Анализ<br>устройств<br>ввода</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Memory Boundary Tracking')">Отслеживание<br>границ<br>памяти</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Scheduled Job Analysis')">Анализ<br>планировщика<br>задач</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System Daemon Monitoring')">Мониторинг<br>системных<br>процессов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System File Analysis')">Анализ<br>системных<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Service Binary Verification')">Верификация<br>бинарей<br>служб</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System Init Config Analysis')">Анализ<br>начальной<br>конфигурации<br>системы</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('User Session Init Config Analysis')">Анализ<br>начальной<br>конфигурации<br>сеанса<br>пользователя</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Анализ<br>процессов</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Database Query String Analysis')">Анализ<br>запросов<br>к БД</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Access Pattern Analysis')">Шаблонный<br>анализ<br>доступа<br>к файлам</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Indirect Branch Call Analysis')">Анализ<br>косвенных<br>переходов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Code Segment Verification')">Верификация<br>сегментов<br>кода<br>процессов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Self-Modification Detection')">Обнаружение<br>самомодификации<br>процесса</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Spawn Analysis')">Анализ<br>появления<br>процессов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Lineage Analysis')">Анализ<br>линейки<br>процессов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Script Execution Analysis')">Анализ<br>выполнения<br>сценариев</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Shadow Stack Comparisons')">Сравнение<br>теневых<br>стеков</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System Call Analysis')">Анализ<br>системных<br>вызовов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Creation Analysis')">Анализ<br>создания<br>файлов</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Анализ<br>поведения<br>пользователя</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Authentication Event Thresholding')">Обработка<br>событий<br>аутентификации</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Authorization Event Thresholding')">Обработка<br>событий<br>авторизации</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Credential Compromise Scope Analysis')">Анализ<br>масштаба<br>компрометации<br>учётных<br>данных</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Domain Account Monitoring')">Мониторинг<br>доменных УЗ</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Job Function Access Pattern Analysis')">Шаблонный<br>анализ<br>доступа</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Local Account Monitoring')">Мониторинг<br>локальных УЗ</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Resource Access Pattern Analysis')">Шаблонный<br>анализ<br>доступа<br>к ресурсам</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Session Duration Analysis')">Анализ<br>продолжительности<br>сессии</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('User Data Transfer Analysis')">Анализ<br>передачи<br>пользовательских<br>данных</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('User Geolocation Logon Pattern Analysis')">Шаблонный<br>анализ<br>геолокации<br>при аутентификации<br>пользователей</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Web Session Activity Analysis')">Анализ<br>активности<br>веб-сессий</div>
+                  </div>
+                </div>
+            </div>
+            <div class="tree-node node-model">
+              <button class="toggle-button1">Изолирование</button>
+                <div class="model-content">
+                  <div class="tree-node node-element">
+                      <p-head>Изоляция<br>выполнения</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Executable Allowlisting')">Разрешение<br>исполняемых<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Executable Denylisting')">Запрет<br>исполняемых<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Hardware-based Process Isolation')">Изоляция<br>процессов<br>на основе<br>аппаратных<br>средств</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('IO Port Restriction')">Ограничение<br>портов<br>ввода-вывода</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Kernel-based Process Isolation')">Изоляция<br>процессов<br>на основе<br>ядра</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Mandatory Access Control')">Мандатное<br>управление<br>доступом</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('System Call Filtering')">Фильтрация<br>системных<br>вызовов</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Изоляция<br>сети</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Broadcast Domain Isolation')">Изоляция<br>широковещательного<br>домена</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('DNS Allowlisting')">Список<br>разрешенных<br>DNS</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('DNS Denylisting')">Список<br>запрещенных<br>DNS</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Forward Resolution Domain Denylisting')">Запрет<br>доменов<br>с переадресацией</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Hierarchical Domain Denylisting')">Иерархический<br>запрет<br>доменов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Homoglyph Denylisting')">Список<br>запрещенных<br>омоглифов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Forward Resolution IP Denylisting')">Forward<br>Resolution<br>IP<br>Denylisting</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Reverse Resolution IP Denylisting')">Reverse<br>Resolution<br>IP<br>Denylisting</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Encrypted Tunnels')">Шифрование<br>туннелей</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Network Traffic Filtering')">Фильтрация<br>сетевого<br>трафика</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Inbound Traffic Filtering')">Фильтрация<br>входящего<br>трафика</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Outbound Traffic Filtering')">Фильтрация<br>исходящего<br>трафика</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Email Filtering')">Фильтрация<br>электронной<br>почты</div>
+                  </div>
+                </div>
+            </div>
+            <div class="tree-node node-model">
+              <button class="toggle-button1">Обман</button>
+                <div class="model-content">
+                  <div class="tree-node node-element">
+                      <p-head>Фальшивая<br>среда</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Connected Honeynet')">Подключенный<br>Honeynet</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Integrated Honeynet')">Интегрированный<br>Honeynet</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Standalone Honeynet')">Автономный<br>Honeynet</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Фальшивый<br>объект</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Decoy File')">Фальшивый<br>файл</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Decoy Network Resource')">Фальшивый<br>сетевой<br>ресурс</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Decoy Persona')">Фальшивая<br>личность</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Decoy Public Release')">Фальшивый<br>публичный<br>релиз</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Decoy Session Token')">Фальшивый<br>токен<br>сессии</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Decoy User Credential')">Фальшивые<br>учетные<br>данные<br>пользователя</div>
+                  </div>
+                </div>
+            </div>
+            <div class="tree-node node-model">
+              <button class="toggle-button1">Изгнанние</button>
+                <div class="model-content">
+                  <div class="tree-node node-element">
+                      <p-head>Эвикция<br>учётных<br>данных</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Account Locking')">Блокировка<br>аккаунта</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Authentication Cache Invalidation')">Ивалидация<br>кэша<br>аутентификации</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Credential Revoking')">Отзыв<br>учётных<br>данных</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Эвикция<br>файлов</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('File Removal')">Удаление<br>файлов</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Email Removal')">Удаление<br>электронной<br>почты</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Эвикция<br>процессов</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Host Shutdown')">Отключение<br>хоста</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Host Reboot')">Перезагрузка<br>хоста</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Suspension')">Приостановка<br>процесса</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Process Termination')">Завершение<br>процесса</div>
+                  </div>
+                </div>
+            </div>
+            <div class="tree-node node-model">
+              <button class="toggle-button1">Восстановление</button>
+                <div class="model-content">
+                  <div class="tree-node node-element">
+                      <p-head>Восстановление<br>доступа</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore Network Access')">Восстановление<br>доступа<br>к сети</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore User Account Access')">Восстановление<br>доступа<br>к УЗ<br>пользователя</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Unlock Account')">Разблокировка<br>УЗ</div>
+                  </div>
+                  <div class="tree-node node-element">
+                      <p-head>Восстановление<br>объектов</p-head>
+                      <div class="tree-node node-leaf" onclick="showDescription('Reissue Credential')">Перевыпуск<br>учётных<br>данных</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore Configuration')">Восстановление<br>доступа<br>к УЗ<br>пользователя</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore Database')">Разблокировка<br>УЗ</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore Disk Image')">Перевыпуск<br>учётных<br>данных</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore File')">Восстановление<br>файла</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore Email')">Восстановление<br>электронной<br>почты</div>
+                      <div class="tree-node node-leaf" onclick="showDescription('Restore Software')">Восстановление<br>ПО</div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="descriptionPanel" class="description-panel">
+      <button id="closeDescriptionPanel" class="close-button">×</button>
+      <div id="descriptionHeader" class="description-header"></div>
+      <div class="description-id-header"> MITRE D3FEND ID:
+        <div id="descriptionId" class="description-id"></div>
+      </div>
+      <div class="description-content-header"> Описание:
+        <div id="descriptionContent" class="description-content"></div>
+      </div>
+      <div class="description-content-header">
+        <div id="descriptionContentSpecialHeader" class="description-content">
+          <div id="pizdec" class="description-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="tree.js"></script>
+    <script type="text/javascript" src="right_bar.js"></script>
+</body>
+</html>

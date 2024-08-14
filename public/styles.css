@@ -1,0 +1,273 @@
+/* Перекрасить фон всего body */
+body {
+  background-color: #000; /* Черный фон */
+  color: #fff; /* Белый текст */
+  margin: 0;
+  align-items: center;
+  height: 100vh; /* Занимает всю высоту окна браузера */
+  overflow-x: auto;
+  overflow-y: auto; /* Вертикальная прокрутка */
+  background-image: url("test1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 750px 500px;
+  backdrop-filter: blur(15px);
+}
+
+/* Стили для шапки */
+header {
+  color: #777;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: Arial, system-ui;
+  align-items: center;
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: sticky;
+  right: 20px;
+  font-size:12px;
+}
+
+.logo {
+	  align-items: center;
+
+}
+
+/* Стили для навигационного меню */
+nav ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+h1 {
+  color: #aaa;
+  font-family: Arial, system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
+
+/* Стили для основной области контента */
+main {
+  size: auto;
+  display: flex;
+  flex-grow: 1; /* Занимает оставшееся пространство */
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/* Стили для основного контента */
+section {
+  width: auto;
+  padding: 20px;
+  margin-left: 0;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+
+}
+
+/* Стили для боковой панели */
+aside {
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* Скрытие боковой панели */
+aside.hidden {
+  transform: translateX(-300px);
+}
+
+/* Стили для кнопки переключения */
+#toggleSidebar {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  color: black;
+  transition: .2s linear;
+  background: #0B63F6;
+  font-size: 20px;
+}
+
+#toggleSidebar:hover {
+  box-shadow: #003CC5 0 0px 0px 40px inset;
+}
+
+/* Общий стиль для всех узлов дерева */
+.tree-node {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: Arial, system-ui;
+  font-size: 95%;
+  background-color: #555; /* Темно-серый для деревьев */
+  color: #fff;
+  opacity: 0.93;
+  text-align: justify;
+}
+
+/* Цвет для модели */
+.node-model {
+  background-color: #555; /* Темно-серый */
+}
+
+/* Цвет для элементов */
+.node-element {
+  background-color: #666; /* Серый */
+}
+
+/* Цвет для листьев */
+.node-leaf {
+  background-color: ; /* Светло-серый */
+  cursor: pointer;
+  justify-content: center;
+  border: 1px solid #ccc; /* Добавление рамки только для листьев */
+}
+
+/* Подсветка для активного листа */
+.node-leaf.active {
+  background-color: #999; /* Более темный зеленый */
+}
+
+/* Подсветка при наведении курсора */
+.node-leaf:hover {
+  background-color: #999; /* Еще светлее при наведении */
+}
+
+/* Изменение стиля для кнопки переключения */
+.toggle-button1 {
+  display: inline-flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Arial, system-ui;
+  font-size: 95%;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 5px;
+  color: #fff;
+}
+
+/* Стили для контента модели */
+.model-content {
+  display: none;
+  flex-direction: row; /* Изменение направления на строку */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+/* Для отображения контента при нажатии на кнопку */
+.toggle-button1.active + .model-content {
+  display: block;
+  align-items: flex-start;
+}
+
+/* Изменение стиля для плюса и минуса */
+.toggle-button1:before {
+  content: "[+] ";
+}
+
+.toggle-button1.active:before {
+  content: "[-] ";
+}
+
+/* Стили для правой боковой панели */
+.description-panel {
+  position: fixed;
+  opacity: 0.93;
+  right: 0;
+  top: 0;
+  height: auto;
+  min-height: 100%;
+  width: 35%;
+  border-radius: 15px;
+  background-color: #444; /* Темно-серый */
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+  font-family: Arial, system-ui;
+  font-weight: normal;
+  color: #fff; /* Белый текст */
+}
+
+.description-panel.open {
+  display: block;
+}
+
+.description-panel button {
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #666; /* Серый цвет для кнопки */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.description-panel button:hover {
+  background-color: #888; /* Светлее при наведении */
+}
+
+/* Стили для заголовка и содержимого описания */
+.description-header {
+  padding: 15px;
+  font-size: 28px;
+  font-family: Arial, system-ui;
+  font-weight: 800;
+}
+
+.description-id {
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: Arial, system-ui;
+  font-weight: 600;
+}
+
+.description-id-header {
+  display: inline-flex;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: Arial, system-ui;
+  font-weight: 600;
+}
+
+.description-content {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: Arial, system-ui;
+}
+
+.description-content-header {
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Arial, system-ui;
+  font-weight: 500;
+}
